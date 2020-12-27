@@ -1,5 +1,7 @@
 import React from 'react';
-import MarketingApp from './components/marketingApp'
+import { BrowserRouter } from 'react-router-dom';
+import MarketingApp from './components/marketingApp';
+import Header from './components/Header';
 
 // import { mount } from 'marketing/MarketingApp';
 // console.log(mount);
@@ -8,10 +10,12 @@ import MarketingApp from './components/marketingApp'
 
 export default () => {
     return (
-        <div>
-            <h1>Hi there</h1>
-            <hr />
-            <MarketingApp />
-        </div>
+        <BrowserRouter>
+            <div>
+                <Header />
+                <MarketingApp />
+            </div>
+        </BrowserRouter>
+
     )
 }
