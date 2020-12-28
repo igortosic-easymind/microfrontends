@@ -3,8 +3,6 @@ import { BrowserRouter } from 'react-router-dom';
 import MarketingApp from './components/marketingApp';
 import Header from './components/Header';
 import { StylesProvider, createGenerateClassName } from '@material-ui/core/styles';
-// import { mount } from 'marketing/MarketingApp';
-// console.log(mount);
 
 const generateClassName = createGenerateClassName({
     productionPrefix: 'co'
@@ -12,14 +10,14 @@ const generateClassName = createGenerateClassName({
 
 export default () => {
     return (
-        <StylesProvider generateClassName={generateClassName}>
-            <BrowserRouter>
+        <BrowserRouter>
+            <StylesProvider generateClassName={generateClassName}>
                 <div>
                     <Header />
                     <MarketingApp />
                 </div>
-            </BrowserRouter>
-        </StylesProvider>
+            </StylesProvider>
+        </BrowserRouter>
 
     )
 }
