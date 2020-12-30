@@ -22,12 +22,12 @@ const devConfig = {
             exposes: {
                 './AuthApp': './src/bootstrap'
             },
-            //shared: ['react', 'react-dom']
             shared: packageJson.dependencies
         }),
         new HtmlWebpackPlugin({
             template: './public/index.html'
-        })]
+        })
+    ]
 }
 
 module.exports = merge(commonConfig, devConfig)
