@@ -79,7 +79,7 @@ export default function Header({ isSignedIn, onSignOut }) {
                         component={RouterLink}
                         to="/"
                     >
-                        Easymind Hei
+                        Easymind App
                     </Typography>
                     <Button
                         color="primary"
