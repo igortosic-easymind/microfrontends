@@ -79,7 +79,7 @@ export default function Header({ isSignedIn, onSignOut }) {
                         component={RouterLink}
                         to="/"
                     >
-                        Easymind App
+                        Easymind AMS S3
                     </Typography>
                     <Button
                         color="primary"
